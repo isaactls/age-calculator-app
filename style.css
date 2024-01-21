@@ -20,7 +20,7 @@ box-sizing: border-box;
 body{
     font-family: 'Poppins', sans-serif;
     margin: 10%;
-    background-color: var(--Off-white);
+    background-color: var(--Light-grey);
 }
 h1{
     font-size: 3re;
@@ -39,8 +39,8 @@ main{
     flex-direction: column;
     flex-shrink: 1;
     padding: 30px;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-color: var(--White );
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 12px;
@@ -57,16 +57,20 @@ main{
 }
 
 input{
-    width: calc(220%/3);
+    width: calc(240%/3);
     height: 2rem;
-    margin-right: 15px;
-    margin-bottom: 2rem;
+    
     padding: 1.5rem 0.6rem;
     border-radius: 4px;
     border: 1px solid var(--Light-grey);
     font-size: 1.3rem;
     cursor: pointer;
+    font-weight: bolder;
 }
+input:focus:invalid {
+    border: 1px solid var(--Light-red);
+  }
+  
 
 input::placeholder{
     font-weight: bold;
@@ -76,10 +80,16 @@ input::placeholder{
     text-transform: uppercase;
     color: var(--Smokey-grey);
 }
+.inpt{
+    padding-bottom: 2rem;
+}
+form{
+    position: relative;
+}
 button{
     position: absolute;
-    right: 25px;
-    top: 100px;
+    right: 1%;
+    bottom: -20%;
     overflow: hidden;
     width: 60px;
     height: 60px;
@@ -88,7 +98,7 @@ button{
     border: none;
     cursor: pointer;
 }
-button:hover{
+button:active{
     background-color: var(--Off-black);
 }
 button img{
@@ -98,7 +108,7 @@ width: 30px;
     margin-top: 25px;
 }
 .output p{
-    font-size: 50px;
+    font-size: 65px;
     padding-left: 15px;
 }
 .output span{
@@ -127,6 +137,7 @@ width: 30px;
 
         flex-shrink: 1;
     }
+    
     button{
         top: 130px;
         right: 45%;

@@ -86,9 +86,8 @@ button{
     position: absolute;
     right: 1%;
     bottom: -20%;
-    overflow: hidden;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: var(--Purple);
     border: none;
@@ -151,12 +150,16 @@ small{
     
     button{
         right: 45%;
+        bottom: -20%;
+        height: 60px;
+        width: 60px;
     
     }
     
     .output p{
         align-self: center;
-        font-size: 40px; 
+        font-size: 50px;
+        font-weight: 800; 
     }
     .output p:nth-of-type(1){
         padding-top: 20px;

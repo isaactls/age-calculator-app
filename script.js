@@ -40,6 +40,10 @@ const invalid = () => {
         yearError.innerHTML = "this field is required";
         yearError.style.opacity = 1;
     }
+    if(inputYear.value <= 99){
+        yearError.innerHTML = "must valid year"
+        yearError.style.opacity = 1;
+    }
     if(inputYear.value > new Date().getFullYear()){
         yearError.innerHTML = "must be in the past";
         yearError.style.opacity = 1;
@@ -66,7 +70,7 @@ const validation = () => {
     let d = new Date(inputYear.value, inputMonth.value, 0);
     let DayValid = inputDay.value <= d.getDate();
     let MonthValid = inputMonth.value > 0 && inputMonth.value <= 12;
-    let yearValid = inputYear.value <= new Date().getFullYear();
+    let yearValid = inputYear.value <= new Date().getFullYear() && inputYear.value > 99;
     let dayRange = inputDay.value > 0 && inputDay.value <= 31;
      if(DayValid && MonthValid && yearValid && dayRange){
         validator = true;

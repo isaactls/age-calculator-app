@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 :root{
     --White: hsl(0, 0%, 100%);
 --Off-white: hsl(0, 0%, 94%);
 --Light-grey: hsl(0, 0%, 86%);
 --Smokey-grey: hsl(0, 1%, 44%);
 --Off-black: hsl(0, 0%, 8%);
-
 --Purple: hsl(259, 100%, 65%);
 --Light-red: hsl(0, 100%, 67%);
-
 }
+
 *{
 margin: 0;
 padding: 0;
@@ -115,7 +115,7 @@ small{
     margin-top: 25px;
 }
 .output p{
-    font-size: 65px;
+    font-size: 4.2rem;
     padding-left: 15px;
 }
 .output span{
@@ -164,6 +164,4 @@ small{
     .output p:nth-of-type(1){
         padding-top: 20px;
     }
-
-
 }

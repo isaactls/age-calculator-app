@@ -40,7 +40,7 @@ const invalid = () => {
         yearError.innerHTML = "this field is required";
         yearError.style.opacity = 1;
     }
-    if(inputYear.value <= 99){
+    if(inputYear.value <= 99 && inputYear > 0){
         yearError.innerHTML = "must valid year"
         yearError.style.opacity = 1;
     }

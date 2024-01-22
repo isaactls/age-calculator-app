@@ -32,22 +32,24 @@
       <form>
         <div class="input_wrapper">
         <div class="inpt day_input">
-          <label for="day">Day</label><br>
-          <input type="number" id="day" placeholder="DD" min="1" max="" required>
+          <label for="day" class="lday">Day</label><br>
+          <input type="number" id="day" placeholder="DD" required ><br>
+          <small class="day_error">must be a valid date</small>
         </div>
         <div class="inpt month_input">
-          <label for="day">month</label><br>
-          <input type="number" id="month" placeholder="MM" required>
-          <p class="error"></p>
+          <label for="day " class="lmonth">month</label><br>
+          <input type="number" id="month" placeholder="MM" required ><br>
+          <small class="month_error">must be a valid date</small>
         </div>
         <div class="inpt year_input">
-          <label for="day">year</label><br>
-          <input type="number" id="year" placeholder="YYYY" required>
+          <label for="day" class="lyear">year</label><br>
+          <input type="number" id="year" placeholder="YYYY" required ><br>
+          <small class="year_error">must be a valid date</small>
         </div>
         
       </div>
       <div>
-        <button type="button"><img src="./images/icon-arrow.svg" alt=""></button> 
+        <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button> 
       </div>
       </form>
         
